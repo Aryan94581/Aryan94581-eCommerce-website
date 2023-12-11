@@ -710,7 +710,7 @@ sidebar
     z-index: 20;
 }
 
-.sidebar .active {
+.sidebar.active {
     left: 0;
     visibility: visible;
 }
@@ -771,7 +771,7 @@ sidebar
     visibility: hidden;
     transition: 0.5s ease-in-out ;
 }
-.sidebar-submenu-category-list .active{
+.sidebar-submenu-category-list.active{
     padding: 13px 0 8px;
     max-height: 122px;
     visibility: visible;
@@ -788,11 +788,11 @@ sidebar
 
 .sidebar .product-name{text-transform: capitalize;}
 
-.sidebar-accordion-menu .active .fa-add,
+.sidebar-accordion-menu.active .fa-add,
 .sidebar-accordion-menu .fa-minus {display: none;}
 
 .sidebar-accordion-menu .fa-add,
-.sidebar-accordion-menu .active .fa-minus {display: block;}
+.sidebar-accordion-menu.active .fa-minus {display: block;}
 
 .sidebar .showcase{
     display: flex;
