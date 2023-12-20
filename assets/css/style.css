@@ -84,10 +84,7 @@ input{
 
 input::placeholder{font: inherit;}
 
-body{
-    background: var(--white);
-    padding-bottom: 60px;
-}
+body{background: var(--white);}
 /* ------------------------- */
 /* scrollbar style  */
 /* ------------------------- */
@@ -1076,8 +1073,7 @@ sidebar
 
 .product-main{margin-bottom: 30px;}
 .product-grid {
-    display: flex;
-    flex-direction: column;
+    display: grid;
     grid-template-columns: 1fr;
     gap: 25px;
     
@@ -1542,3 +1538,126 @@ margin-bottom: 15px;
     font-size: 25px;
 }
 
+
+.footer-nav-item .ion-box ion-icon{--ionicon-stroke-width: 30px}
+
+.footer-nav .social-link{
+display: flex;
+justify-content: flex-start;
+align-items: center;
+gap: 10px;
+
+}
+.social-link .footer-nav-item{
+    font-size: 25px;
+}
+.footer-bottom{
+    margin-bottom: 50px;
+    text-align: center;
+}
+
+.payment-img{
+    max-width: 335px;
+    width: 100%;
+    margin: auto;
+    margin-bottom: 15px;
+}
+
+.copyright{
+    color: var(--sonic-silver);
+    font-size: var(--fs-8);
+    font-weight: var(--weight-500);
+    text-transform: capitalize;
+    letter-spacing: 1.2px;
+}
+
+.copyright a{
+    display: inline;
+    color: inherit;
+}
+
+
+
+/* ------------------- */
+/* responsive */
+/* -------------------- */
+
+
+/* -- */
+/* response larger then 480px */
+/*  */
+
+@media (min-width: 480px){
+
+ /* -- */
+/* custom properties */
+/*  */   
+
+:root{
+    /* typography */
+    --fs-1: 1.875rem;
+
+}
+
+/* header */
+
+.header-top{
+    display: block;
+    padding: 10px 0;
+    border-bottom: 1px solid var(--cultured);
+}
+
+.header-social-container,
+.header-user-action{display: none;}
+
+.header-alert-news{
+    color: var(--sonic-silver);
+    font-size: var(--fs-9);
+    text-transform: uppercase;
+}
+.header-alert-news b {font-weight: var(--weight-500);}
+
+.header-main { padding: 25px 0;}
+.mobile-bottom-navigation{
+    border-top-left-radius: var(--border-radius-md);
+    border-top-right-radius: var(--border-radius-md);
+}
+
+
+
+/* banner */
+
+.slider-item{aspect-ratio: 5 / 3;}
+
+.banner-content {
+    top: 50%;
+    right: auto;
+    bottom: auto;
+    transform: translateY(-50%);
+    max-width: 320px;
+}
+.banner-subtitle{--fs-7: 1rem;}
+
+.banner-text{
+    display: block;
+color: var(--sonic-silver);
+font-size: var(--fs-7);
+font-weight: var(--weight-500);
+margin-bottom: 10px;
+}
+    
+.banner-text b{ font-size: var(--fs-2);}
+
+.banner-btn{padding: 7px 20px;}
+
+
+
+/* product */
+
+.product-grid {
+    grid-template-columns: 1fr 1fr;
+    gap: 30px;
+}
+
+
+}
